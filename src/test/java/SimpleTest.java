@@ -23,7 +23,7 @@ public class SimpleTest {
         int randomNumber = random.nextInt(10);
 
         System.out.println(String.format("The number is %d", randomNumber));
-        Assert.assertTrue(5 >= randomNumber);
+        Assert.assertTrue("This is flaky test, sometimes green, when number is >= 5", 5 >= randomNumber);
     }
 
 }
