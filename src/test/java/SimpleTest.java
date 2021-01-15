@@ -22,8 +22,8 @@ public class SimpleTest {
         // Generate random integers in range 0 to 9
         int randomNumber = random.nextInt(10);
 
-        System.out.println(String.format("The number is %d", randomNumber));
-        Assert.assertTrue("This is flaky test, sometimes green, when number is >= 5", 5 >= randomNumber);
+        System.out.println(String.format("The random number is %d", randomNumber));
+        Assert.assertTrue(5 >= randomNumber, "This is flaky test, sometimes green, when number is >= 5");
     }
 
 }
